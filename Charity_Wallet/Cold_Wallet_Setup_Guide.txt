@@ -1,8 +1,0 @@
-Charity Wallet Setup Guide
----------------------------
-1. Create a cold wallet (hardware preferred, e.g., Ledger).
-2. Generate public address and store private keys offline.
-3. Publish wallet address publicly for transparency.
-4. Use blockchain explorers to verify incoming donations.
-5. Schedule public donation reports.
-
