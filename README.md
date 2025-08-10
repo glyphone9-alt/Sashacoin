@@ -40,3 +40,10 @@ Wallet address (for public verification): *[to be added]*
 **Repo:** [https://github.com/glyphone9-alt/Sashacoin](https://github.com/glyphone9-alt/Sashacoin)  
 **Hashtag:** #SashacoinForAutism
 
+- **Bitcoin (BTC):** `bcrt1qjmecd4js4h8ljm5s2vh74whch4uwkf4ev59afq`
+
+## 💰 Charity Wallets
+- **Solana (SOL):** ``
+- **Ethereum (ETH):** ``
+- **Bitcoin (BTC):** `bcrt1q28q2zmazkqgddaqarwk9mnzq6jezhc9lu9aq89`
+
