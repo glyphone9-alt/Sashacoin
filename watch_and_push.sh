@@ -1,18 +1,14 @@
 #!/bin/bash
-
+PROJECT_DIR=~/CoinFactory/Sashacoin
 ROOT_DIR=~/CoinFactory
-PROJECT_DIR="$ROOT_DIR/Sashacoin"
-SNAPSHOT="$PROJECT_DIR/COINFACTORY_SNAPSHOT.md"
+SNAPSHOT=$PROJECT_DIR/COINFACTORY_SNAPSHOT.md
 
 generate_snapshot() {
-  echo "# CoinFactory Snapshot" > "$SNAPSHOT"
-  echo "## Current Folder Structure" >> "$SNAPSHOT"
-  find "$ROOT_DIR" -maxdepth 2 | sed "s#$ROOT_DIR/##" >> "$SNAPSHOT"
-
-  echo -e "\n## Project Summary\n- Purpose: Red-Cross-of-Blockchains\n- Governance: Guardians, elections, community voting\n- Highlights: Prestige roles, transparency, impact tracking" >> "$SNAPSHOT"
+  bash "$ROOT_DIR/setup_coinfactory.sh" --snapshot-only
 }
 
-while inotifywait -e modify,create,delete -r "$PROJECT_DIR"; do
+while inotifywait -e modify,create,delete,move -r "$PROJECT_DIR"; do
+  echo "$(date): Change detected" >> "$PROJECT_DIR/.change_log"
   generate_snapshot
   cd "$ROOT_DIR"
   git add .
