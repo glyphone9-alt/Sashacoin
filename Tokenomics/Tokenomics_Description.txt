@@ -1,0 +1,8 @@
+Sashacoin Tokenomics
+---------------------
+Total Supply: 1,000,000,000 tokens
+Founder (Sasha): 66% of founder's share pledged to autism outreach when value reaches M+
+Community Incentives: 20%
+Liquidity & Exchange Listings: 10%
+Development Reserve: 4%
+
