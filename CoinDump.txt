@@ -1,0 +1,117 @@
+SashaCoin - CoinFactory Dump
+============================
+Mission:
+- Launch SashaCoin as a philanthropic meme/utility token tied to autism awareness.
+- Founder pledge: When founder stash/value >= $1,000,000 then 90% of founder share allocated to autism initiatives.
+- Short-term goal: seed crowdfunding + community -> $2k-$3k in 10-12 days. Launch crowdfunding Tue.
+- Long-term: token issuance, utility pathways into DreamStory ecosystem.
+
+Quick Timeline:
+- Day 0–1: Assets + landing + outreach kit ready.
+- Day 2: Launch crowdfunding (GoFundMe + Juicebox optional).
+- Day 3–7: Social push, influencer outreach, build presale list.
+- Day 15–45: Token launch / Presale if traction.
+
+Notes:
+- Payment rails: Use fiat crowdfunding first (GoFundMe) then optional crypto presale.
+- All details & outreach scripts in Celebrity_Outreach_Kit.
+EOF && \
+# Influencer list (minimal starter rows)
+cat > ~/CoinFactory/Sashacoin/Celebrity_Outreach_Kit/Influencer_List.csv <<'EOF'
+name,platform,handle,category,notes
+Temple Grandin,Twitter,@TempleGrandin,Autism Advocate,High-profile autism advocate (contact cautiously)
+Holly Robinson Peete,Instagram,@hollyrpeete,Autism Advocate,Celebrity activist
+Crypto Influencer 1,Twitter,@example,crypto,Target for crypto audience
+Autism Org 1,Email,contact@autismorg.org,org,Local org outreach
+EOF && \
+# DM Scripts
+cat > ~/CoinFactory/Sashacoin/Celebrity_Outreach_Kit/DM_Scripts.txt <<'EOF'
+SHORT DM (for social DMs)
+-------------------------
+Hi {name}, I’m launching SashaCoin to support autism families — 90% of founder share pledged to autism causes when milestone reached. We'd be honored if you could take 30s to watch this short video and, if it resonates, mention it. Link: {campaign_link}
+— D
+
+LONG EMAIL (for press / orgs)
+-----------------------------
+Subject: SashaCoin — Sasha’s Birthday Campaign for Autism Support
+
+Hello {name},
+
+My name is D. For my daughter Sasha’s birthday we’re launching SashaCoin — a community-driven token & crowdfunding campaign that pledges major proceeds to autism support. We’re starting with a crowdfunding launch on {date} and would love your voice/endorsement to help reach families in need.
+
+Key facts:
+- Founder pledge: 90% of founder share donated at $1M milestone
+- Immediate aim: crowdfunding for awareness + initial projects
+- I can provide assets, a short video, and a one-page brief.
+
+Would you be open to a short call or a quote for our campaign page?
+
+Warmly,
+D
+EOF && \
+# Press Release template
+cat > ~/CoinFactory/Sashacoin/Celebrity_Outreach_Kit/Press_Release_Template.txt <<'EOF'
+FOR IMMEDIATE RELEASE
+[Title] SashaCoin Launches to Fund Autism Support — Founder Pledges 90% at $1M Valuation
+
+[City, Date] — Short opening paragraph with emotional hook about Sasha and the pledge...
+
+Contact:
+Name: D
+Email: {youremail}
+Campaign Link: {campaign_link}
+
+Boilerplate about SashaCoin & CoinFactory...
+EOF && \
+# Hashtag strategy
+cat > ~/CoinFactory/Sashacoin/Celebrity_Outreach_Kit/Hashtag_Strategy.txt <<'EOF'
+Crypto hashtags:
+#SashaCoin #CryptoForGood #Altcoin #CryptoCommunity #TokenForGood
+
+Autism hashtags:
+#AutismAwareness #AutismSupport #ForSasha #AutismAcceptance
+
+Combo posts:
+- Use 2–3 crypto tags + 1 autism tag per post.
+EOF && \
+# Visual placeholders
+touch ~/CoinFactory/Sashacoin/Visual_Assets/{logo_placeholder.svg,coin_render_placeholder.png,impact_infographic.txt,canva_template_link.txt} && \
+# Launch Day Checklist
+cat > ~/CoinFactory/Sashacoin/Launch/Launch_Day_Checklist.txt <<'EOF'
+Launch Day Checklist (Tues)
+1) Publish crowdfunding page (GoFundMe + Juicebox optional).
+2) Seed 5–10 small donations to show activity.
+3) Publish landing page (Carrd/Framer) with campaign link and video.
+4) Post across Twitter, IG, Telegram, and relevant Facebook groups simultaneously.
+5) DM top 20 influencers & autism orgs (use DM_Scripts).
+6) Post first update & thank early donors.
+7) Monitor comments & reply promptly.
+EOF && \
+# Docs: short README and copy assets
+cat > ~/CoinFactory/Sashacoin/Docs/README.md <<'EOF'
+CoinFactory / SashaCoin
+======================
+Location: ~/CoinFactory/Sashacoin
+
+Quick commands:
+- Open folder: cd ~/CoinFactory/Sashacoin
+- Run launcher: ~/CoinFactory/launch_sashacoin.sh
+
+Files:
+- CoinDump.txt : core concept + timeline
+- Celebrity_Outreach_Kit : influencer CSV, DM scripts, press release, hashtags
+- Visual_Assets : placeholders for logo, renders
+- Launch/Launch_Day_Checklist.txt : step-by-step launch tasks
+
+Keep this folder synced to GitHub if you want cross-device continuity.
+EOF && \
+# Tiny launcher script
+cat > ~/CoinFactory/launch_sashacoin.sh <<'EOF'
+#!/data/data/com.termux/files/usr/bin/bash
+echo "Opening CoinFactory/Sashacoin..."
+ls -la ~/CoinFactory/Sashacoin
+echo
+echo "Quick view of key files:"
+echo " - CoinDump: ~/CoinFactory/Sashacoin/CoinDump.txt"
+echo " - Influencer list: ~/CoinFactory/Sashacoin/Celebrity_Outreach_Kit/Influencer_List.csv"
+echo " - Launch checklist: ~/CoinFactory/Sashacoin/Launch/Launch_Day_Checklist.txt"

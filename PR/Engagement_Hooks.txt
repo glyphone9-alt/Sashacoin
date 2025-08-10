@@ -1,0 +1,7 @@
+Engagement Hooks
+-----------------
+1. Community votes on donation recipients.
+2. Weekly updates from funded projects.
+3. Holder-only challenges for extra donations.
+4. Social media hashtag drives (#SashacoinForAutism).
+
