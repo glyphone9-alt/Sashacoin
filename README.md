@@ -47,3 +47,9 @@ Wallet address (for public verification): *[to be added]*
 - **Ethereum (ETH):** ``
 - **Bitcoin (BTC):** `bcrt1q28q2zmazkqgddaqarwk9mnzq6jezhc9lu9aq89`
 
+
+## 💰 Charity Wallets
+- **Solana (SOL):** ``
+- **Ethereum (ETH):** ``
+- **Bitcoin (BTC):** ``
+
